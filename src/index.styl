@@ -6,136 +6,155 @@ $white=#FAFAFA
 $font=system-ui, BlinkMacSystemFont, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif
 
 html
-  background #111
-  user-select: none;
+  background: #111
+  user-select: none
 
 #body:not(.showControls)
   .povswitch
-    display: none !important;
+    display: none !important
+
   .a-canvas
-    cursor: none !important;
+    cursor: none !important
 
 @media screen and (max-width: 700px)
   .povswitch.mobileControl
-    display: block !important;
+    display: block !important
+
   .povswitch:not(.mobileControl)
-    display: none !important;
+    display: none !important
 
 @media screen and (max-width: 600px)
   #desktopContainer
-    display: none !important;
+    display: none !important
+
   #songInfoOverlay
-    padding-left: 1px !important;
-    left: 10px !important;
+    padding-left: 1px !important
+    left: 10px !important
 
     img
-      height 60px !important;
-      width 60px !important;
+      height: 60px !important
+      width: 60px !important
+
     p
-      font-size 20px !important;
+      font-size: 20px !important
+
     #songSubName
-      font-size 15px !important;
+      font-size: 15px !important
+
     #difficultyLabel
-      margin-top 2px !important;
+      margin-top: 2px !important
+
     #songDifficulty
-      font-size 10px !important;
+      font-size: 10px !important
+
     #songMode
-      font-size 10px !important;
+      font-size: 10px !important
+
     #songCustomDifficulty
-      font-size 10px !important;
+      font-size: 10px !important
+
   #playerInfoOverlay
-    padding-left: 1px !important;
-    left: 10px !important;
+    padding-left: 1px !important
+    left: 10px !important
 
     img
-      height 60px !important;
-      width 60px !important;
+      height: 60px !important
+      width: 60px !important
+
     #playerName
-      font-size 20px !important;
+      font-size: 20px !important
+
     #playerCountry
-      width 16px !important;
-      height 11px !important;
+      width: 16px !important
+      height: 11px !important
 
   .controlsMobile
-    display: block !important;
+    display: block !important
 
 .mobileControl
-    display: none !important;
+    display: none !important
 
 @media screen and (max-width: 450px)
   .desktopControl:not(.controlsFullscreen)
-    display: none !important;
-  .controlsSettings.mobileControl, .controlsCamera.mobileControl
-    display: block !important;
-  .controlsSettings:not(.mobileControl), .controlsCamera:not(.mobileControl)
-    display: none !important;
+    display: none !important
+
+  .controlsSettings.mobileControl,
+  .controlsCamera.mobileControl
+    display: block !important
+
+  .controlsSettings:not(.mobileControl),
+  .controlsCamera:not(.mobileControl)
+    display: none !important
 
 @media screen and (max-width: 374px)
   .povswitch.mobileControl
-    display: block !important;
+    display: block !important
+
   .povswitch:not(.mobileControl)
-    display: none !important;
+    display: none !important
 
 @media screen and (max-width: 380px)
   .controlsFullscreen.mobileControl
-    display: block !important;
+    display: block !important
+
   .controlsFullscreen:not(.mobileControl)
-    display: none !important;
+    display: none !important
 
 #controls
-  align-items center
-  background rgba(0, 0, 0, 0.85)
-  border-radius 10px
-  display none
-  font-family $font
-  left 0
-  margin 0 auto 10px auto
-  padding 10px
-  position fixed
-  right 0
-  max-width 520px
-  z-index 99999999
+  align-items: center
+  background: rgba(0, 0, 0, 0.85)
+  border-radius: 10px
+  display: none
+  font-family: $font
+  left: 0
+  margin: 0 auto 10px auto
+  padding: 10px
+  position: fixed
+  right: 0
+  max-width: 520px
+  z-index: 99999999
 
   &.challengeLoaded
-    display flex
+    display: flex
 
   #controlsVolume
-    cursor pointer
-    padding 3px 10px 0 3px
+    cursor: pointer
+    padding: 3px 10px 0 3px
+
     img
-      height 20px
-      width 20px
+      height: 20px
+      width: 20px
 
   #volumeSliderContainer
-    background rgba(0, 0, 0, 0.85)
-    border-radius 0 5px 5px 0
-    bottom 110px
-    cursor pointer
-    display none
-    left -46px
-    position absolute
+    background: rgba(0, 0, 0, 0.85)
+    border-radius: 0 5px 5px 0
+    bottom: 110px
+    cursor: pointer
+    display: none
+    left: -46px
+    position: absolute
     transform rotate(-90deg)
-    z-index 999999999
-    transition: 0.2s all;
+    z-index: 999999999
+    transition: 0.2s all
 
     input
-      cursor pointer
-      padding 0
-      width 100px
+      cursor: pointer
+      padding: 0
+      width: 100px
 
     #mixer
-      text-decoration: none;
-      border: none;
+      text-decoration: none
+      border: none
       margin-right: 7px
       margin-left: 7px
-      width: 18px;
-      height: 18px;
-      font-size: 16px;
-      color: #fff;
-      border-radius: 5px;
-      box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-      cursor: pointer;
-      outline: none;
+      width: 18px
+      height: 18px
+      font-size: 16px
+      color: #fff
+      border-radius: 5px
+      box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24)
+      cursor: pointer
+      outline: none
       display: flex
       justify-content: center
 
@@ -146,8 +165,8 @@ html
               
     #mixer.selected
       background-color: rgb(0, 89, 255) 
-      box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-      margin-left: 14px;
+      box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24)
+      margin-left: 14px
 
       .fas
         color: white
@@ -159,143 +178,150 @@ html
         margin: 10px
     
     #mixerContainer .settingRange
-      margin auto
+      margin: auto
 
   .controlsSettings
-    margin: 6px 16px 0 8px;
-    right: 24px;
-    width: 24px;
-    cursor: pointer;
+    margin: 6px 16px 0 8px
+    right: 24px
+    width: 24px
+    cursor: pointer
+
     img
-      height 20px
-      width 20px
+      height: 20px
+      width: 20px
 
   .inFullscreen
     .enterFullscreen
-      display none
+      display: none
+
     .exitFullscreen
-      display block
+      display: block
+
   .exitFullscreen
-        display none
+        display: none
 
   .controlsFullscreen.inFullscreen
-      margin 0px 0px 0 0px
+      margin: 0px 0px 0 0px
 
   .controlsFullscreen
-    cursor pointer
-    margin 6px 0px 0 0px
+    cursor: pointer
+    margin: 6px 0px 0 0px
     position: absolute
     right: -4px
     width: 40px
+
     svg
       fill: white
-      height 26px
-      width 26px
+      height: 26px
+      width: 26px
 
   .controlsFullscreen.mobileControl
-    position relative
+    position: relative
 
   .controlsCamera
-    cursor pointer
-    margin 6px 0px 0 6px
-    right 93px
-    width 25px
+    cursor: pointer
+    margin: 6px 0px 0 6px
+    right: 93px
+    width: 25px
+
     img
-      height 30px
-      width 26px
+      height: 30px
+      width: 26px
 
   .controlsMobile
-    cursor: pointer;
-    margin: 4px 0 0 0;
-    right: 68px;
-    width: 21px;
+    cursor: pointer
+    margin: 4px 0 0 0
+    right: 68px
+    width: 21px
     display: none
+
     img
-      height 30px
-      width 26px
+      height: 30px
+      width: 26px
 
   #settingsContainer
     background: rgba(0,0,0,0.85)
-    border-radius 5px
-    bottom 60px
-    display none
+    border-radius: 5px
+    bottom: 60px
+    display: none
     grid-template-columns: 1fr 1fr
-    right 0px
-    position absolute
-    z-index 999999999
+    right: 0px
+    position: absolute
+    z-index: 999999999
     width: 360px
     overflow: hidden
 
     input
-      cursor pointer
-      padding 0
-      width 100px
+      cursor: pointer
+      padding: 0
+      width: 100px
 
   .generalSettingsContainer
-    display grid
+    display: grid
     grid-template-columns: 1fr 1fr
 
   #cameraSettingsContainer
-    background rgba(0,0,0,0.85)
-    border-radius 5px
-    padding 8px
-    bottom 60px
-    display none
-    right 0px
-    position absolute
-    z-index 999999999
+    background: rgba(0,0,0,0.85)
+    border-radius: 5px
+    padding: 8px
+    bottom: 60px
+    display: none
+    right: 0px
+    position: absolute
+    z-index: 999999999
     width: 330px
-    text-align: center;
+    text-align: center
 
     input
-      cursor pointer
-      padding 0
-      width 90%
+      cursor: pointer
+      padding: 0
+      width: 90%
 
     .settingHeader
-      color: #bdbdbd;
-      margin-bottom: 5px;
+      color: #bdbdbd
+      margin-bottom: 5px
 
     .toggleButton
       text-align: left
 
   #cameraPositionContainer,
   #cameraSaveContainer
-    align-items: center;
-    justify-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    display: flex;
-    grid-gap: 0.5em;
-    margin: 10px 0px;
+    align-items: center
+    justify-items: center
+    flex-wrap: wrap
+    justify-content: center
+    display: flex
+    grid-gap: 0.5em
+    margin: 10px 0px
 
   #mobileContainer
-    padding 0.5em
+    padding: 0.5em
+
     .speedSliderContainer
-      height 2.4em
-      background transparent !important
+      height: 2.4em
+      background: transparent !important
 
   .speedSliderContainer
-    border-radius 0 5px 5px 0
-    cursor pointer
-    display none
-    margin-left -6px
-    z-index 99
-    display block
+    border-radius: 0 5px 5px 0
+    cursor: pointer
+    display: none
+    margin-left: -6px
+    z-index: 99
+    display: block
 
     input
-      --value: 1;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      cursor pointer
+      --value 1
+      -webkit-appearance: none
+      -moz-appearance: none
+      cursor: pointer
       margin-left: -1px
-      width 104px
+      width: 104px
       height: 8px
-      background-color transparent
-      margin-top 13px
-      z-index 100
-      border-radius: 10px;
-      background: #4776e6; /* fallback for old browsers */
+      background-color: transparent
+      margin-top: 13px
+      z-index: 100
+      border-radius: 10px
+      background: #4776e6 // fallback for old browsers
       background:
         -webkit-linear-gradient(to right, transparent 0%, transparent calc((var(--value) / 2) * 100%), white calc((var(--value) / 2) * 100%), white 100%),
         -webkit-linear-gradient(to right, #8e54e9, #dd1853);
@@ -303,283 +329,285 @@ html
         linear-gradient(to right, transparent 0%, transparent calc((var(--value) / 2) * 100%), white calc((var(--value) / 2) * 100%), white 100%),
         linear-gradient(to right, #8e54e9, #dd1853);
 
-    input[type="range"]::-moz-range-thumb {
-      -moz-appearance: none;
-      border-radius: 50%;
-      height: 15px;
-      width: 15px;
-      max-width: 80px;
-      position: relative;
-      background-color: #1d1c25;
-      cursor: -moz-grab;
-      -moz-transition: border 1000ms ease;
-      transition: border 1000ms ease;
-    }
+    input[type="range"]::-moz-range-thumb 
+      -moz-appearance: none
+      border-radius: 50%
+      height: 15px
+      width: 15px
+      max-width: 80px
+      position: relative
+      background-color: #1d1c25
+      cursor: -moz-grab
+      -moz-transition: border 1000ms ease
+      transition: border 1000ms ease
+    
 
-    input[type=range]::-webkit-slider-thumb {
-      -webkit-appearance: none;
+    input[type=range]::-webkit-slider-thumb 
+      -webkit-appearance: none
       height: 15px
       width: 15px
       border-radius: 50%
       border: 1px solid white
       background-color: #1d1c25
       z-index: 1
-    }
 
   #pause
-    cursor pointer
-    display flex
-    padding-right 10px
-    opacity 0
-    transition opacity .5s
+    cursor: pointer
+    display: flex
+    padding-right: 10px
+    opacity: 0
+    transition: opacity .5s
+
     &:hover #pauseSymbol
-      fill $red
+      fill: $red
 
   #logo
-    margin-right 10px
+    margin-right: 10px
+
     img
-      height 32px
-      width 32px
+      height: 32px
+      width: 32px
 
 	#timeline
-    height 12px
-    width 160px
+    height: 12px
+    width: 160px
 
     &:hover #timelineLine
-      height 6px
-      background $red
-      margin-top 3px
+      height: 6px
+      background: $red
+      margin-top: 3px
 
   #timelineLine
-    height 2px
-    background $darkred
-    border-radius 2px
-    margin-top 5px
-    transition background 0.2s, height 0.2s, margin-top 0.2s
+    height: 2px
+    background: $darkred
+    border-radius: 2px
+    margin-top: 5px
+    transition: background 0.2s, height 0.2s, margin-top 0.2s
 
   #playhead
-    background $white
-    position relative
-    border-radius 2px 0 0 2px
-    height 100%
-    width 0%
+    background: $white
+    position: relative
+    border-radius: 2px 0 0 2px
+    height: 100%
+    width: 0%
 
 #songTime
-  color $gray
-  font-size 11px
-  margin-left 15px
-  margin-right 0
-  width 70px
+  color: $gray
+  font-size: 11px
+  margin-left: 15px
+  margin-right: 0
+  width: 70px
 
 .songSpeed
-  color $gray
-  font-size 11px
-  align-self baseline
-  margin-right 1em
-  width 10px
+  color: $gray
+  font-size: 11px
+  align-self: baseline
+  margin-right: 1em
+  width: 10px
 
 #mobileContainer
-  background rgba(0, 0, 0, 0.85)
-  border-radius 5px
-  bottom 60px
-  display none
-  right 0px
-  position absolute
-  z-index 5
-  text-align: center;
-  align-items: center;
+  background: rgba(0, 0, 0, 0.85)
+  border-radius: 5px
+  bottom: 60px
+  display: none
+  right: 0px
+  position: absolute
+  z-index: 5
+  text-align: center
+  align-items: center
 
   input
-    cursor pointer
-    padding 0
-    width 90%
+    cursor: pointer
+    padding: 0
+    width: 90%
 
   .settingHeader
-    color: #bdbdbd;
-    margin-bottom: 5px;
+    color: #bdbdbd
+    margin-bottom: 5px
 
   .toggleButton
     text-align: left
 
 #controlsModes,
 #controlsDifficultyOptions
-  background #020202
-  border 1px solid $gray
-  border-radius 5px
-  bottom 50px
-  color $white
-  display none
-  flex-direction column
-  font-family $font
-  font-size 11px
-  list-style none
-  margin 0
-  opacity 0
-  padding 0
-  position absolute
-  right 50px
-  transition all .2s
+  background: #020202
+  border: 1px solid $gray
+  border-radius: 5px
+  bottom: 50px
+  color: $white
+  display: none
+  flex-direction: column
+  font-family: $font
+  font-size: 11px
+  list-style: none
+  margin: 0
+  opacity: 0
+  padding: 0
+  position: absolute
+  right: 50px
+  transition: all .2s
+
   li
-    cursor pointer
-    padding 10px
-    min-width 65px
-    transition all .1s
+    cursor: pointer
+    padding: 10px
+    min-width: 65px
+    transition: all .1s
     &:hover
-      color $red
+      color: $red
 
 #skipIntro
-  background: #000000;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  bottom: 50px;
-  color: #fafafa;
-  flex-direction: column;
-  font-family: system-ui, BlinkMacSystemFont, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 11px;
-  list-style: none;
-  padding: 10px;
-  position: absolute;
-  transition: all 0.2s;
-  cursor pointer
-  left 2px
+  background: #000000
+  border: 1px solid #ccc
+  border-radius: 5px
+  bottom: 50px
+  color: #fafafa
+  flex-direction: column
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif
+  font-size: 11px
+  list-style: none
+  padding: 10px
+  position: absolute
+  transition: all 0.2s
+  cursor: pointer
+  left: 2px
+
   &:hover
     color: red
 
 #controlsModes
-  right 142px
+  right: 142px
 
 .modeOptionsActive
   #controlsModes
-    display flex
-    opacity 1
+    display: flex
+    opacity: 1
 
 .difficultyOptionsActive
   #controlsDifficultyOptions
-    display flex
-    opacity 1
+    display: flex
+    opacity: 1
 
 #timeline
-  cursor pointer
-  position relative
+  cursor: pointer
+  position: relative
 
 #timelineHover
-  bottom 0
-  color $white
-  font-size 11px
-  display none
-  padding 5px
-  position absolute
-  z-index 2
+  bottom: 0
+  color: $white
+  font-size: 11px
+  display: none
+  padding: 5px
+  position: absolute
+  z-index: 2
+
   &.timelineHoverActive
-    display block
+    display: block
 
 #timelineCursor
-  height 40px
-  bottom 0
-  width 1px
-  position absolute
-  display none
-  background-color #0dcef0c2
-  z-index 2
+  height: 40px
+  bottom: 0
+  width: 1px
+  position: absolute
+  display: none
+  background-color: #0dcef0c2
+  z-index: 2
 
 #vrButton
-  background url(assets/img/enter-vr-button-background.png) no-repeat
-  background-size cover
-  border 0
-  bottom 25px
-  cursor pointer
-  height 23.5px
-  position absolute
-  right 30px
-  width 42px
-  z-index 9999999
+  background: url(assets/img/enter-vr-button-background.png) no-repeat
+  background-size: cover
+  border: 0
+  bottom: 25px
+  cursor: pointer
+  height: 23.5px
+  position: absolute
+  right: 30px
+  width: 42px
+  z-index: 9999999
 
   &.a-hidden
-    visibility hidden
+    visibility: hidden
 
   &:active
-    border 0
+    border: 0
 
   &:hover
-    background-position 0 -25px
+    background-position: 0 -25px
 
-.discord-link
-  transition: 0.6s top, 0.6s right;
-  -webkit-transition: 0.6s top, 0.6s right;
-  -moz-transition: 0.6s top, 0.6s right;
-  -ms-transition: 0.6s top, 0.6s right;
-  -o-transition: 0.6s top, 0.6s right;
-
-.patreon-link
-  transition: 0.6s top, 0.6s right;
-  -webkit-transition: 0.6s top, 0.6s right;
-  -moz-transition: 0.6s top, 0.6s right;
-  -ms-transition: 0.6s top, 0.6s right;
-  -o-transition: 0.6s top, 0.6s right;
+.link-corner
+  transition 0.6s top, 0.6s right
+  -webkit-transition 0.6s top, 0.6s right
+  -moz-transition 0.6s top, 0.6s right
+  -ms-transition 0.6s top, 0.6s right
+  -o-transition 0.6s top, 0.6s right
 
 .patreon-logo
-  transform: translateX(658.5px) translateY(-458px) rotate(45deg);
+  transform translateX(658.5px) translateY(-458px) rotate(45deg)
 
 #controls
   bottom -60px
-  -webkit-transition: bottom 0.5s;
-  -moz-transition: bottom 0.5s;
-  -ms-transition: bottom 0.5s;
-  -o-transition: bottom 0.5s;
-  transition: bottom 0.5s;
+  -webkit-transition bottom 0.5s
+  -moz-transition bottom 0.5s
+  -ms-transition bottom 0.5s
+  -o-transition bottom 0.5s
+  transition bottom 0.5s
 
 #songInfoOverlay
-  top: -130px
-  -webkit-transition: top 0.5s;
-  -moz-transition: top 0.5s;
-  -ms-transition: top 0.5s;
-  -o-transition: top 0.5s;
-  transition: top 0.5s;
+  top -130px
+  -webkit-transition top 0.5s
+  -moz-transition top 0.5s
+  -ms-transition top 0.5s
+  -o-transition top 0.5s
+  transition top 0.5s
 
 #playerInfoOverlay
-  bottom: -130px
-  -webkit-transition: bottom 0.5s;
-  -moz-transition: bottom 0.5s;
-  -ms-transition: bottom 0.5s;
-  -o-transition: bottom 0.5s;
-  transition: bottom 0.5s;
+  bottom -130px
+  -webkit-transition bottom 0.5s
+  -moz-transition bottom 0.5s
+  -ms-transition bottom 0.5s
+  -o-transition bottom 0.5s
+  transition bottom 0.5s
 
 .showControls
-  -webkit-transition: top 0.5s bottom 0.5s;
-  -moz-transition: top 0.5s bottom 0.5s;
-  -ms-transition: top 0.5s bottom 0.5s;
-  -o-transition: top 0.5s bottom 0.5s;
-  transition: top 0.5s bottom 0.5s;
+  -webkit-transition top 0.5s bottom 0.5s
+  -moz-transition top 0.5s bottom 0.5s
+  -ms-transition top 0.5s bottom 0.5s
+  -o-transition top 0.5s bottom 0.5s
+  transition top 0.5s bottom 0.5s
+
   #controls
     bottom 0
+
   #songInfoOverlay
-    top: 30px
+    top 30px
+
   #playerInfoOverlay
-    bottom: 80px
+    bottom 80px
+
   #controls
     #cameraSettingsContainer
       &.settingsActive
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display grid
+        grid-template-columns 1fr 1fr
+
     #settingsContainer
       &.settingsActive
         display block
+
     #volumeSliderContainer
       &.volumeActive
         display flex
         align-items center
         padding-right 8px
+
     #mobileContainer
       &.settingsActive
         display flex
 
 .isPlaying
-  .discord-link
-    top: -80px !important
-    right -80px !important 
-  .patreon-link
-    top: -80px !important
-    right -80px !important 
+  .link-corner
+    top -80px !important
+    right -80px !important
+
   #controls,
   #controls #pause
     opacity 1
@@ -606,9 +634,9 @@ html
 #songInfoOverlay
   align-items top
   display none
-  padding-left: 5px
+  padding-left 5px
   position absolute
-  left: 20px
+  left 20px
 
   img
     height 100px
@@ -619,41 +647,48 @@ html
     font-family $font
     margin 0
     text-shadow 0 0 2px #000
+
   #songInfo
     display flex
     flex-direction column
     padding-left 5px
     margin-top -7px
+
   #songName
     color $gray
     font-weight bold
     font-size 25px
     padding-left 5px
+
   #songSubName
     color #94828d
     padding-left 5px
+
   #difficultyLabel
     display flex
     margin-top 5px
+
   #songDifficulty
     color #ffffff
     font-size 15px
     margin-left 5px
-
     padding 2px 5px 3px 5px
-    border-radius: 4px
+    border-radius 4px
+
   #songMode
     color #ffffff
     font-size 15px
     margin-left 5px
     display none
     padding 2px 5px 3px 5px
-    border-radius: 4px
+    border-radius 4px
     background-color orange
+
   #songCustomDifficulty
     color #ffffff
     font-size 15px
     padding 2px 8px
+    
   #modifiers
     color #ffffff
     font-size 15px
@@ -663,7 +698,7 @@ html
   #songInfoSelect
     align-items center
     display flex
-    padding-left: 5px
+    padding-left 5px
 
   #controlsDifficulty,
   #controlsMode
@@ -675,12 +710,13 @@ html
     padding 5px 10px
     text-align center
     transition all .1s
-    max-width: 100px
-    max-height: 28px
-    overflow: hidden
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    max-width 100px
+    max-height 28px
+    overflow hidden
+    display -webkit-box
+    -webkit-line-clamp 2
+    -webkit-box-orient vertical
+
     p
       font-family $font
 
@@ -690,9 +726,9 @@ html
 #playerInfoOverlay
   align-items top
   display none
-  padding-left: 5px
+  padding-left 5px
   position absolute
-  left: 20px
+  left 20px
 
   img
     height 100px
@@ -703,16 +739,19 @@ html
     font-family $font
     margin 0
     text-shadow 0 0 2px #000
+
   #playerInfo
     display flex
     flex-direction column
     padding-left 5px
     margin-top -7px
+
   #playerName
     color $gray
     font-weight bold
     font-size 25px
     padding-left 5px
+    
   #playerCountry
     width 25px
     height 16px
@@ -720,491 +759,447 @@ html
     padding-top 5px
 
 .povswitch
-  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20245.82%20141.73%22%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill%3A%23fff%3Bfill-rule%3Aevenodd%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Emask%3C%2Ftitle%3E%3Cpath%20class%3D%22a%22%20d%3D%22M175.56%2C111.37c-22.52%2C0-40.77-18.84-40.77-42.07S153%2C27.24%2C175.56%2C27.24s40.77%2C18.84%2C40.77%2C42.07S198.08%2C111.37%2C175.56%2C111.37ZM26.84%2C69.31c0-23.23%2C18.25-42.07%2C40.77-42.07s40.77%2C18.84%2C40.77%2C42.07-18.26%2C42.07-40.77%2C42.07S26.84%2C92.54%2C26.84%2C69.31ZM27.27%2C0C11.54%2C0%2C0%2C12.34%2C0%2C28.58V110.9c0%2C16.24%2C11.54%2C30.83%2C27.27%2C30.83H99.57c2.17%2C0%2C4.19-1.83%2C5.4-3.7L116.47%2C118a8%2C8%2C0%2C0%2C1%2C12.52-.18l11.51%2C20.34c1.2%2C1.86%2C3.22%2C3.61%2C5.39%2C3.61h72.29c15.74%2C0%2C27.63-14.6%2C27.63-30.83V28.58C245.82%2C12.34%2C233.93%2C0%2C218.19%2C0H27.27Z%22%2F%3E%3C%2Fsvg%3E") 50% 50%/70% 70% no-repeat rgba(0,0,0,.35);
-  border: 0;
-  bottom: 10px;
-  cursor: pointer;
-  min-width: 50px;
-  min-height: 30px;
-  padding-right: 5%;
-  padding-top: 4%;
-  position: absolute;
-  right: 10px;
-  transition: background-color .05s ease;
-  -webkit-transition: background-color .05s ease;
-  z-index: 9999;
-  border-radius: 8px;
+  background url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20245.82%20141.73%22%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill%3A%23fff%3Bfill-rule%3Aevenodd%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Emask%3C%2Ftitle%3E%3Cpath%20class%3D%22a%22%20d%3D%22M175.56%2C111.37c-22.52%2C0-40.77-18.84-40.77-42.07S153%2C27.24%2C175.56%2C27.24s40.77%2C18.84%2C40.77%2C42.07S198.08%2C111.37%2C175.56%2C111.37ZM26.84%2C69.31c0-23.23%2C18.25-42.07%2C40.77-42.07s40.77%2C18.84%2C40.77%2C42.07-18.26%2C42.07-40.77%2C42.07S26.84%2C92.54%2C26.84%2C69.31ZM27.27%2C0C11.54%2C0%2C0%2C12.34%2C0%2C28.58V110.9c0%2C16.24%2C11.54%2C30.83%2C27.27%2C30.83H99.57c2.17%2C0%2C4.19-1.83%2C5.4-3.7L116.47%2C118a8%2C8%2C0%2C0%2C1%2C12.52-.18l11.51%2C20.34c1.2%2C1.86%2C3.22%2C3.61%2C5.39%2C3.61h72.29c15.74%2C0%2C27.63-14.6%2C27.63-30.83V28.58C245.82%2C12.34%2C233.93%2C0%2C218.19%2C0H27.27Z%22%2F%3E%3C%2Fsvg%3E") 50% 50%/70% 70% no-repeat rgba(0,0,0,.35)
+  border 0
+  bottom 10px
+  cursor pointer
+  min-width 50px
+  min-height 30px
+  padding-right 5%
+  padding-top 4%
+  position absolute
+  right 10px
+  transition background-color .05s ease
+  -webkit-transition background-color .05s ease
+  z-index 9999
+  border-radius 8px
+
+  &:hover
+    background-color #FF94C8
 
 .povswitch.mobileControl
   position relative
   right 0
   bottom 0
 
-.povswitch:hover {
-  background-color: #FF94C8;
-}
-
-#settings {
-  position: absolute;
-  right: 130px;
-  bottom: 15px;
+#settings 
+  position absolute
+  right 130px
+  bottom 15px
   font-family $font
   font-size 11px
-}
 
 input[type=range].settingRange
-  display: inline-block
-  -webkit-appearance: none
-  height: 4px
-  padding: 0;
-  margin: 10px 0;
-  margin-left: 0.3em;
-  font: inherit;
-  outline: none;
-  color: #069
-  background: #3f3f3f;
-  box-sizing: border-box;
-  transition: opacity .2s;
-  cursor: pointer;
+  display inline-block
+  -webkit-appearance none
+  height 4px
+  padding 0
+  margin 10px 0
+  margin-left 0.3em
+  font inherit
+  outline none
+  color #069
+  background #3f3f3f
+  box-sizing border-box
+  transition opacity .2s
+  cursor pointer
 
-/* Input range Chrome */
+// Input range Chrome
 input[type=range].settingRange::-webkit-slider-runnable-track 
-  border: none;
-  height: 14px
-  border-radius: 0;
-  background-color: transparent;
+  border none
+  height 14px
+  border-radius 0
+  background-color transparent
 
 
 input[type=range].settingRange::-webkit-slider-thumb 
-  -webkit-appearance: none;
-  height: 15px
-  width: 15px
-  border: none
-  border-radius: 50%
-  background-color: rgb(142,84,233);
+  -webkit-appearance none
+  height 15px
+  width 15px
+  border none
+  border-radius 50%
+  background-color rgb(142,84,233)
 
 
-/* Input range Firefox */
+// Input range Firefox
 input[type=range].settingRange::-moz-range-track 
-  border: none;
-  height: 4px
-  border-radius: 0;
-  background-color: transparent;
+  border none
+  height 4px
+  border-radius 0
+  background-color transparent
 
 input[type=range].settingRange::-moz-range-thumb
-  height: 15px
-  width: 15px
-  border: none
-  border-radius: 50%
-  background-color: rgb(142,84,233);
+  height 15px
+  width 15px
+  border none
+  border-radius 50%
+  background-color rgb(142,84,233)
 
 input[type=range].settingRange::-moz-range-progress
-  height: 4px;
-  background: transparent;
+  height 4px
+  background transparent
 
 .settingButton
-    border: none;
-    border-radius: 4px
-    color: white
-    padding: 4px
-    cursor: pointer
-    background-color: #3f3f3f
+    border none
+    border-radius 4px
+    color white
+    padding 4px
+    cursor pointer
+    background-color #3f3f3f
 
 .settingButton:disabled, button[disabled]
-    color: #6a6a6a
+    color #6a6a6a
 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 32px;
-  height: 17px;
-  margin-left: 4px;
-  margin-right: 2px;
-}
+.switch 
+  position relative
+  display inline-block
+  width 32px
+  height 17px
+  margin-left 4px
+  margin-right 2px
 
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
 
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #3f3f3f;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
+// Hide default HTML checkbox
+.switch input 
+  opacity 0
+  width 0
+  height 0
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 13px;
-  width: 15px;
-  left: 2px;
-  bottom: 2px;
-  background-color: #6e6e6e;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
+// The slider
+.slider
+  position absolute
+  cursor pointer
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background-color #3f3f3f
+  -webkit-transition 0.1s
+  transition 0.1s
 
-input:checked + .slider {
-  background-color: #2f712d;
-}
+  &:before
+    position absolute
+    content ""
+    height 13px
+    width 15px
+    left 2px
+    bottom 2px
+    background-color #6e6e6e
+    -webkit-transition 0.1s
+    transition 0.1s
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
+input:checked + .slider
+  background-color #2f712d
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(13px);
-  -ms-transform: translateX(13px);
-  transform: translateX(13px);
-  background-color: #5ddd59;
-}
+input:focus + .slider
+  box-shadow 0 0 1px #2196F3
 
-/* Rounded sliders */
-.slider.round, .slider.round:before {
-  border-radius: 4px;
-}
+input:checked + .slider:before
+  -webkit-transform translateX(13px)
+  -ms-transform translateX(13px)
+  transform translateX(13px)
+  background-color #5ddd59
 
-.toggleButtonLabel {
-  top: -2px;
-  position: relative;
-  display: inline-block;
-  width: 30px;
-  height: 17px;
-  color: $white;
+// Rounded sliders
+.slider.round, .slider.round:before
+  border-radius 4px
+
+.toggleButtonLabel
+  top -2px
+  position relative
+  display inline-block
+  width 30px
+  height 17px
+  color $white
   font-size 11px
-}
 
-.toggleButtonContainer {
-  height: 0.9em;
-}
+.toggleButtonContainer 
+  height 0.9em
 
-.missMark {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  z-index: 2;
- -webkit-transition: all 0.3s ease 0s;
-     transition: all 0.3s ease 0s;
-     bottom: -5px
-}
+.missMark
+  width 10px
+  height 10px
+  position absolute
+  z-index 2
+  -webkit-transition all 0.3s ease 0s
+  transition all 0.3s ease 0s
+  bottom -5px
 
-.missMark:hover {
-  width: 15px;
-  height: 15px;
-  z-index: 3;
-}
+  &:hover
+    width 15px
+    height 15px
+    z-index 3
 
-.timeline-filter {
-  position: absolute;
-  -webkit-transition: bottom 0.3s ease 0s;
-  transition: bottom 0.3s ease 0s;
-  bottom: -40px
-  z-index: 1;
-  overflow: hidden;
-}
+.timeline-filter 
+  position absolute
+  -webkit-transition bottom 0.3s ease 0s
+  transition bottom 0.3s ease 0s
+  bottom -40px
+  z-index 1
+  overflow hidden
 
-.acc-canvas-filter {
-  height: 0px
-  opacity: 0
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
+.acc-canvas-filter
+  height 0px
+  opacity 0
+  -webkit-transition all 0.3s ease 0s
+  transition all 0.3s ease 0s
 
-.acc-canvas {
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  position: relative
-  opacity: 0
-  height: 0px
-  bottom: 0px
-     
-}
+.acc-canvas
+  -webkit-transition all 0.3s ease 0s
+  transition all 0.3s ease 0s
+  position relative
+  opacity 0
+  height 0px
+  bottom 0px
 
-#timeline:hover {
-  .missMark {
-    bottom: var(--hover-bottom);
-  }
+#timeline:hover
+  .missMark
+    bottom var(--hover-bottom)
 
-  .acc-canvas {
-    height: 150px !important;
-    bottom: 40px !important;
-    opacity: 1 !important;
-  }
+  .acc-canvas
+    height 150px !important
+    bottom 40px !important
+    opacity 1 !important
 
-  .timeline-filter {
-    bottom: 3px !important;
-  }
+  .timeline-filter
+    bottom 3px !important
 
-  .acc-canvas-filter {
-    height: 150px !important;
-    opacity: 1 !important;
-  }
+  .acc-canvas-filter
+    height 150px !important
+    opacity 1 !important
 
-  #timelineCursor {
-    display: block;
-  }
-}
+  #timelineCursor 
+    display block
 
-#ctxMenu {
-  display: none;
-  position: absolute;
-  overflow: hidden;
-  border-radius: 6px;
-  background: rgba(28,28,28,0.9);
-  text-shadow: 0 0 2px rgb(0 0 0 / 50%);
-  -webkit-transition: opacity .1s cubic-bezier(0,0,0.2,1);
-  transition: opacity .1s cubic-bezier(0,0,0.2,1);
-  z-index: 9999;
-  font-size: 0.8em;
-}
+#ctxMenu
+  display none
+  position absolute
+  overflow hidden
+  border-radius 6px
+  background rgba(28,28,28,0.9)
+  text-shadow 0 0 2px rgb(0 0 0 / 50%)
+  -webkit-transition opacity .1s cubic-bezier(0,0,0.2,1)
+  transition opacity .1s cubic-bezier(0,0,0.2,1)
+  z-index 9999
+  font-size 0.8em
 
-.panel-menu {
-    padding: 4px 0;
-    display: table;
-    width: 100%;
-    color: #eee;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+.panel-menu
+  padding 4px 0
+  display table
+  width 100%
+  color #eee
+  -moz-box-sizing border-box
+  box-sizing border-box
 
-.menuitem {
-    display: table-row;
-    cursor: default;
-    outline: none;
-    height: 20px;
-}
+.menuitem
+  display table-row
+  cursor default
+  outline none
+  height 20px
 
-.menuitem:hover {
-    background: rgba(102, 102, 102, 0.9);
-}
+.menuitem:hover
+  background rgba(102, 102, 102, 0.9)
 
-.menuitem-icon {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0 5px;
-}
+.menuitem-icon
+  display table-cell
+  vertical-align middle
+  padding 0 5px
 
-.menuitem-content {
-    text-align: right;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0 10px;
-}
+.menuitem-content
+  text-align right
+  display table-cell
+  vertical-align middle
+  padding 0 10px
 
-.menuitem-label {
-    font-weight: 500;
-    padding-left: 0;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0 10px;
-}
+.menuitem-label
+  font-weight 500
+  padding-left 0
+  display table-cell
+  vertical-align middle
+  padding 0 10px
 
-.btn {
-	position: relative;
-  display:inline-block;
-	width: 30px;
-	height: 30px;
-	cursor: pointer;
-	transition: border 0.1s ease-in-out;
-  bottom: 3px;
-  right: 10px;
-}
+.btn
+  position relative
+  display inline-block
+  width 30px
+  height 30px
+  cursor pointer
+  transition border 0.1s ease-in-out
+  bottom 3px
+  right 10px
 
-.btn:hover .bar {
-	background-color: #555;
-}
+  &:hover .bar
+	  background-color #555
 
-.btn .bar {
-	display: inline-block;
-	position: absolute;
-	top: 10px;
-	left: 0;
-	width: 2px;
-	height: 20px;
-	border-radius: 3px;
-	background-color: white;
-	transform-origin: center;
-	transition: transform 0.4s ease-in-out, background 0.1s ease-in-out;
-}
+.btn .bar
+	display inline-block
+	position absolute
+	top 10px
+	left 0
+	width 2px
+	height 20px
+	border-radius 3px
+	background-color white
+	transform-origin center
+	transition transform 0.4s ease-in-out, background 0.1s ease-in-out
 
-.btn.pause .bar-1 {
-	transform: translateX(13.5px) translateY(0px) rotate(0deg);
-}
+.btn.pause .bar-1
+	transform translateX(13.5px) translateY(0px) rotate(0deg)
 
-.btn.pause .bar-2 {
-	transform: translateX(24px) translateY(0px) rotate(0deg);
-}
+.btn.pause .bar-2
+	transform translateX(24px) translateY(0px) rotate(0deg)
 
-.btn.pause .bar-3 {
-	transform: translateX(13.5px) translateY(0px) rotate(0deg);
-}
+.btn.pause .bar-3
+	transform translateX(13.5px) translateY(0px) rotate(0deg)
 
-.btn.play .bar-1 {
-	transform: translateX(20px) translateY(-6px) rotate(-55deg);
-}
+.btn.play .bar-1
+	transform translateX(20px) translateY(-6px) rotate(-55deg)
 
-.btn.play .bar-2 {
-	transform: translateX(20px) translateY(5px) rotate(-125deg);
-}
+.btn.play .bar-2
+	transform translateX(20px) translateY(5px) rotate(-125deg)
 
-.btn.play .bar-3 {
-	transform: translateX(12.5px) translateY(0px) rotate(0deg);
-}
+.btn.play .bar-3
+	transform translateX(12.5px) translateY(0px) rotate(0deg)
 
-.range__tick {
-  fill: #a0a0a0;
-}
+.range__tick
+  fill #a0a0a0
 
 .range__point
-  fill: #a0a0a0;
-  font-size: 10px
-  white-space: pre
+  fill #a0a0a0
+  font-size 10px
+  white-space pre
+
   &:hover
-    fill: red
+    fill red
 
-.rangeTicks {
-  position: absolute
-  bottom: 35px
-  margin-left: 1.5px
-  width: 100px
-}
+.rangeTicks
+  position absolute
+  bottom 35px
+  margin-left 1.5px
+  width 100px
 
-.rangePoints {
-  position: absolute
-  bottom: 2px
-  margin-left: 1.5px
-  width: 100px;
-  z-index: -1;
-}
+.rangePoints
+  position absolute
+  bottom 2px
+  margin-left 1.5px
+  width 100px
+  z-index -1
 
-.range__tick:first-child {
-  -webkit-transform: translateX(2px);
-  -moz-transform: translateX(2px);
-  -ms-transform: translateX(2px);
-  -o-transform: translateX(2px);
-  transform: translateX(2px);
-}
+.range__tick:first-child
+  -webkit-transform translateX(2px)
+  -moz-transform translateX(2px)
+  -ms-transform translateX(2px)
+  -o-transform translateX(2px)
+  transform translateX(2px)
+
 .range__tick:last-child {
-  -webkit-transform: translateX(-3px);
-  -moz-transform: translateX(-3px);
-  -ms-transform: translateX(-3px);
-  -o-transform: translateX(-3px);
-  transform: translateX(-3px);
+  -webkit-transform translateX(-3px)
+  -moz-transform translateX(-3px)
+  -ms-transform translateX(-3px)
+  -o-transform translateX(-3px)
+  transform translateX(-3px)
 }
 
-.rangePointsSvg {
-  margin-left: -6px
-  -webkit-transform: translateY(-6px);
-  -moz-transform: translateY(-6px);
-  -ms-transform: translateY(-6px);
-  -o-transform: translateY(-6px);
-  transform: translateY(-6px);
-}
+.rangePointsSvg
+  margin-left -6px
+  -webkit-transform translateY(-6px)
+  -moz-transform translateY(-6px)
+  -ms-transform translateY(-6px)
+  -o-transform translateY(-6px)
+  transform translateY(-6px)
 
-.jd__tick {
-  fill: #a0a0a0;
-  -webkit-transform: translateX(2px);
-  -moz-transform: translateX(2px);
-  -ms-transform: translateX(2px);
-  -o-transform: translateX(2px);
-  transform: translateX(2px);
-}
+.jd__tick
+  fill #a0a0a0
+  -webkit-transform translateX(2px)
+  -moz-transform translateX(2px)
+  -ms-transform translateX(2px)
+  -o-transform translateX(2px)
+  transform translateX(2px)
 
 .jd__point
-  fill: #a0a0a0;
-  font-size: 10px
-  white-space: pre
+  fill #a0a0a0
+  font-size 10px
+  white-space pre
+
   &:hover
-    fill: red
+    fill red
 
 #jdRangePoint {
-  -webkit-transform: translateY(-8px);
-  -moz-transform: translateY(-8px);
-  -ms-transform: translateY(-8px);
-  -o-transform: translateY(-8px);
-  transform: translateY(-8px);
+  -webkit-transform translateY(-8px)
+  -moz-transform translateY(-8px)
+  -ms-transform translateY(-8px)
+  -o-transform translateY(-8px)
+  transform translateY(-8px)
 }
 
 .orthographicFullscreen
   cursor pointer
-  position: absolute
-  width: 1.5%
+  position absolute
+  width 1.5%
+
   svg
-    fill: white
+    fill white
     height 100%
     width 100%
+
   .exitFullscreen
       display none
 
 #body:not(.showControls) .orthographicFullscreen
-    .enterFullscreen
-      display none
-    .exitFullscreen
-      display none
+  .enterFullscreen
+    display none
+
+  .exitFullscreen
+    display none
+
 .orthographicFullscreen.inFullscreen
-    .enterFullscreen
-      display none
-    .exitFullscreen
-      display block
+  .enterFullscreen
+    display none
+
+  .exitFullscreen
+    display block
 
 #hitsounds-button
-    margin-top: 0.3em
-    margin-left: 0.3em
-    font-size: 12px
-    width: 9.6em !important
-    overflow: hidden
+  margin-top 0.3em
+  margin-left 0.3em
+  font-size 12px
+  width 9.6em !important
+  overflow hidden
 
 
 #resetHitsounds
-    display: none
-    color: white
-    font-size: 13px
-    margin-left: 20px
-    cursor: pointer
+  display none
+  color white
+  font-size 13px
+  margin-left 20px
+  cursor pointer
 
-.tab-container {
-  display: flex;
-}
+.tab-container
+  display flex
 
-.tab-buttons {
-  width: 90px
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(13, 13, 13, 0.40)
-}
+.tab-buttons
+  width 90px
+  display flex
+  flex-direction column
+  background-color rgba(13, 13, 13, 0.40)
 
-.tab-button {
-  padding: 10px;
-  border: none;
-  color: white;
-  background-color: transparent
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+.tab-button
+  padding 10px
+  border none
+  color white
+  background-color transparent
+  cursor pointer
+  transition background-color 0.3s
 
-.tab-button.active {
-  background-color: rgba(142,84,233,0.70);
-}
+  &.active
+    background-color rgba(142,84,233,0.70)
 
-.tab-content {
-  flex-grow: 1;
-  padding: 8px;
-}
+.tab-content 
+  flex-grow 1
+  padding 8px
 
-.tab-pane {
-  display: none;
-}
+.tab-pane
+  display none
 
-.tab-pane.active {
-  display: block;
-}
+  &.active
+    display block
